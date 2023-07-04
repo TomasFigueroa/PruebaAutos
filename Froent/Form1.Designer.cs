@@ -40,6 +40,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.Bt_Agregar = new System.Windows.Forms.Button();
             this.Check = new System.Windows.Forms.CheckBox();
+            this.lblMensaje = new System.Windows.Forms.Label();
+            this.Bt_Modificar = new System.Windows.Forms.Button();
+            this.Bt_Aceptar = new System.Windows.Forms.Button();
+            this.Bt_Acepmod = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgautos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,12 +73,12 @@
             this.dgautos.AllowUserToAddRows = false;
             this.dgautos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgautos.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dgautos.Location = new System.Drawing.Point(241, 27);
+            this.dgautos.Location = new System.Drawing.Point(241, 193);
             this.dgautos.Name = "dgautos";
             this.dgautos.ReadOnly = true;
             this.dgautos.RowHeadersWidth = 51;
             this.dgautos.RowTemplate.Height = 24;
-            this.dgautos.Size = new System.Drawing.Size(547, 411);
+            this.dgautos.Size = new System.Drawing.Size(617, 276);
             this.dgautos.TabIndex = 3;
             // 
             // Dt_Fecha
@@ -141,12 +145,55 @@
             this.Check.Text = "Disponibilidad";
             this.Check.UseVisualStyleBackColor = true;
             // 
+            // lblMensaje
+            // 
+            this.lblMensaje.AutoSize = true;
+            this.lblMensaje.Location = new System.Drawing.Point(274, 49);
+            this.lblMensaje.Name = "lblMensaje";
+            this.lblMensaje.Size = new System.Drawing.Size(0, 16);
+            this.lblMensaje.TabIndex = 11;
+            // 
+            // Bt_Modificar
+            // 
+            this.Bt_Modificar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Bt_Modificar.Location = new System.Drawing.Point(35, 345);
+            this.Bt_Modificar.Name = "Bt_Modificar";
+            this.Bt_Modificar.Size = new System.Drawing.Size(97, 38);
+            this.Bt_Modificar.TabIndex = 12;
+            this.Bt_Modificar.Text = "Borrar";
+            this.Bt_Modificar.UseVisualStyleBackColor = true;
+            this.Bt_Modificar.Click += new System.EventHandler(this.Bt_Modificar_Click);
+            // 
+            // Bt_Aceptar
+            // 
+            this.Bt_Aceptar.Location = new System.Drawing.Point(35, 403);
+            this.Bt_Aceptar.Name = "Bt_Aceptar";
+            this.Bt_Aceptar.Size = new System.Drawing.Size(97, 38);
+            this.Bt_Aceptar.TabIndex = 13;
+            this.Bt_Aceptar.Text = "Modificar";
+            this.Bt_Aceptar.UseVisualStyleBackColor = true;
+            this.Bt_Aceptar.Click += new System.EventHandler(this.Bt_Aceptar_Click);
+            // 
+            // Bt_Acepmod
+            // 
+            this.Bt_Acepmod.Location = new System.Drawing.Point(147, 403);
+            this.Bt_Acepmod.Name = "Bt_Acepmod";
+            this.Bt_Acepmod.Size = new System.Drawing.Size(90, 38);
+            this.Bt_Acepmod.TabIndex = 14;
+            this.Bt_Acepmod.Text = "Aceptar";
+            this.Bt_Acepmod.UseVisualStyleBackColor = true;
+            this.Bt_Acepmod.Click += new System.EventHandler(this.Bt_Acepmod_Click);
+            // 
             // Auto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(870, 481);
+            this.Controls.Add(this.Bt_Acepmod);
+            this.Controls.Add(this.Bt_Aceptar);
+            this.Controls.Add(this.Bt_Modificar);
+            this.Controls.Add(this.lblMensaje);
             this.Controls.Add(this.Check);
             this.Controls.Add(this.Bt_Agregar);
             this.Controls.Add(this.label4);
@@ -180,6 +227,10 @@
         private System.Windows.Forms.Button Bt_Agregar;
         private System.Windows.Forms.DataGridView dgautos;
         private System.Windows.Forms.CheckBox Check;
+        private System.Windows.Forms.Label lblMensaje;
+        private System.Windows.Forms.Button Bt_Modificar;
+        private System.Windows.Forms.Button Bt_Aceptar;
+        private System.Windows.Forms.Button Bt_Acepmod;
     }
 }
 
